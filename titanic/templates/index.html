@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Titanic Predictor</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
   </head>
   <body>
     <h1>Home Page</h1>
+    <button type="button" onclick="clicked()">Press the button</button>
     <h3>Get your Titanic predictions here:</h3>
     <p>Enter the prediction of your details</p>
     <p>We will output your prediction</p>
@@ -33,5 +36,8 @@
         <input type="submit" name="">
         <br>
     </form>
+    <script type="text/javascript" src="{% static 'main.js' %}">
+
+    </script>
   </body>
 </html>
